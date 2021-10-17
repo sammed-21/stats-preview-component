@@ -1,0 +1,134 @@
+:root{
+    --Very-dark-blue  : hsl(233, 47%, 7%);
+--Dar-desaturated-blue  : hsl(244, 38%, 16%);
+ --Soft-violet: hsl(277, 64%, 61%);
+
+ 
+
+--White   : hsl(0, 0%, 100%);
+--Slightly-transparent-white : hsla(0, 0%, 100%, 0.75   );
+--Slightly-transparent-white : hsla(0, 0%, 100%, 0.6);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: "lexend Deca", sans-serif;
+    background-color: var(--Very-dark-blue);
+}
+p{
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: var(--Slightly-transparent-white);
+}
+.list span{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--Slightly-transparent-white);
+}
+h1 span{
+    color: var(--Soft-violet);
+}
+.container{
+    position: absolute;
+    margin:10% 10%;
+    overflow: hidden;
+    width: 73%;
+    height: auto;
+    display: flex;
+   border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: var(--Dar-desaturated-blue);
+}
+ 
+.border{
+    margin: 40px 50px;
+}
+ .main{
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-left: 30px;
+    text-align: left;
+    flex-direction: column;
+ }
+
+ .list{
+     display: flex;
+     color: var(--White);
+ }
+
+ .list li{
+     text-decoration: none;
+     list-style: none;
+     margin-right: 30px;
+ }
+ .image{
+    width: 85%;
+    height: 55vh;
+
+    background-image:  url(./images/image-header-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ }
+  .overlay{
+    width:100%;
+    height: 55vh;
+      background-color:hsl(277, 64%, 61%,0.5 ) ;
+  }
+.main h1{
+     
+     
+    color: var(--White);
+    margin-bottom: 30px;
+}
+.main p{
+    min-width: 78px;
+
+
+    font-weight: 300;
+    margin-bottom: 30px;
+    max-width: 90%;
+    font-size: 15px;
+
+    color: var(--White);
+}
+
+@media (max-width:700px){
+    .container{
+          
+    
+display: flex;
+flex-direction:column-reverse;
+      }
+      .image{
+          height: 29vh;
+          width: 100%;
+          margin-bottom: 30px;
+      }
+      .list{
+          display: flex;
+          flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+          align-items: center;
+      }
+      .list li{
+          margin:20px;
+      }
+      
+      .overlay {
+        height: 29vh;
+    }
+}
